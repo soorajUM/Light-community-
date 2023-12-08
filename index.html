@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="author" content="soorajUM">
+      <link rel="shortcut icon" href="images/favicon.png">
+      <link rel="stylesheet" href="style.css">
+      <script src="script.js"></script>
+      <title>Lights community</title>
+  </head>
+  <body>
+    <div class="desktop">
+    <div class="overlap-group-wrapper">
+    <div class="overlap-group">
+    <div class="overlap">
+    <div class="div">
+    <p class="text-wrapper">
+    Volutpat lacinia aliquet integer nulla magna ipsum, mauris ipsum sed. Iaculis ultrices maecenas ut
+    aliquam nisi. Ipsum, scelerisque egestas egestas tortor vulputate tristique. Faucibus vel mauris nulla
+    dictumst at. Orci quisque orci vitae sed elit, vulputate ac. Tellus id at dui sed. Sed elementum blandit
+    porttitor quis.
+    </p>
+    <img class="unsplash" src="assets/images/unsplash_2EJCSULRwC8.png" />
+    <div class="rectangle"></div>
+    </div>
+    <div class="text-wrapper-2">Lights Community</div>
+    <p class="p">Join Our Community to Know More ...</p>
+    <div class="overlap-2">
+      <div class="blinking-container">
+        <img class="img" src="assets/icons/Rectangle 4.svg" onclick="openpopup()" />
+        <img class="img" src="assets/icons/Rectangle 5.svg" onclick="openpopup()" /> 
+      </div>
+      <div id="blinkingbutton" class="text-wrapper-3">Join Now</div>
+      </div>
+    
+    </div>
+    <img class="ionaughtlogo" src="assets/images/ionaughtlogo 1.png" />
+    <img id="leftnavicon" class="download" src="assets/icons/download.svg" />
+    <img id="leftnavicon" class="facebook" src="assets/icons/facebook.svg" />
+    <img id="leftnavicon" class="instagram" src="assets/icons/instagram.svg" />
+    <img id="leftnavicon" class="twitch" src="assets/icons/twitch.svg" />
+    <img id="leftnavicon" class="twitter" src="assets/icons/twitter.svg" />
+    <img id="leftnavicon" class="arrow" src="assets/icons/chevrons-right.svg" onclick="showdropdown()"/>
+      
+    <div class="overlap-3">
+    <div class="rectangle-2"></div>
+    <div class="text-wrapper-4"><a href="">Join Now</a></div>
+    </div>
+    <div class="div-wrapper"><div class="text-wrapper-5">Log In</div></div>
+    <div class="text-wrapper-6">How it Works</div>
+    <div class="text-wrapper-7">About Us</div>
+    <div class="frame" id="frame">
+      <img class="closebutton" src="assets/icons/x-circle.svg" alt="" onclick="closepopup()">
+      <div class="content">
+          <h1>Sorry!</h1>
+          <p>There Is No Navigation</p>
+      </div>
+  </div>
+  <div class="dropdown" id="dropdown">
+    <img  class="arrowt" src="assets/icons/chevrons-top.svg" onclick="closedropdown()"/>
+    <div class="dropcontent">
+      About <br><br>How it Works
+    </div>
+  </div>
+    </div>
+    </div>
+    </div>
+    <script>
+      let frame = document.getElementById("frame");
+      let dropdown = document.getElementById("dropdown");
+
+function openpopup() {
+    frame.style.display = "block";
+}
+
+function closepopup() {
+    frame.style.display = "none";
+
+}
+function showdropdown() {
+   dropdown.style.display="block"
+}
+function closedropdown() {
+   dropdown.style.display="none"
+}
+    </script> 
+  </body>
+  </html>

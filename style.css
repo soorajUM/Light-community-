@@ -1,0 +1,693 @@
+*{
+          margin: 0;
+          box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Saira-Regular';
+    src: url('fonts/Saira/static/Saira-Regular.ttf') format('woff2');     
+    font-weight: normal;
+    font-style: normal;
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+        color: greenyellow
+    }
+    100% {
+        opacity: 1;
+        color: white
+     }
+
+}
+@keyframes translateicon {
+    0% {
+        opacity: 0;
+        transform: translate(-20px, -20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0px, 0px);
+     }
+
+}
+@keyframes translateleftnavicon {
+    0% {
+        opacity: 0;
+        transform: translateY(-400px) scale(0.1)
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px) scale(1)
+     }
+
+}
+@keyframes logintextanimation {
+    0% {
+        opacity: 0;
+        transform: translate(40px,40px) scale(0.1)
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0px,0px) scale(1)
+     }
+
+}
+@keyframes logindivanimation {
+    0% {
+        opacity: 0;
+        transform: translate(-40px,40px) scale(0.1)
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0px,0px) scale(1)
+     }
+
+}
+@keyframes joinnowanimation {
+    0% {
+        opacity: 0;
+        transform: translateY(10px) scaleY(0.5)
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px) scaleY(1)
+     }
+
+}
+@keyframes overlap2animation {
+    0% {
+        opacity: 0;
+        transform: translate(-100px,100px)
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0px,0px)
+     }
+
+}
+@keyframes contentanimation {
+    0% {
+        opacity: 0;
+        transform: translate(-100px,-50px) scale(0.5)
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0px,0px) scale(1)
+        
+     }
+
+}
+.desktop {
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 1440px;
+    height: 1024px;
+}
+.desktop .overlap-group-wrapper {
+
+    background-image: url(./assets/images/unsplash_iar-afB0QQw.png);
+    background-size: contain;
+    background-position: 50% 50%;
+    width: 1440px;
+    height: 1024px;
+}
+.desktop .overlap-group {
+    position: relative;
+    height: 1024px;
+    background-image: url(./assets/images/unsplash_oyXis2kALVg.png);
+    background-size: cover;
+    background-position: 50% 50%;
+}
+.frame {
+    position: fixed;
+    top: 200px;
+    left: 500px;
+    height: 400px;
+    width: 500px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url(./assets/images/unsplash_ffoyXis2kALVg.png);
+    background-size: cover;
+    display: none;
+    
+}
+
+.closebutton {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 30px;
+    left: 430px;
+    cursor: pointer;
+}
+
+.content {
+    font-family: "Saira-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 20px;
+    letter-spacing: 0;
+    padding-left: 30%;
+    padding-top: 30%;
+}
+
+.desktop .overlap {
+    position: absolute;
+    width: 1312px;
+    height: 890px;
+    top: 134px;
+    left: 128px;
+    background-image: url(./assets/images/unsplash_ffoyXis2kALVg.png);
+    background-size: cover;
+    background-position: 50% 50%;
+}
+.desktop .div {
+    position: absolute;
+    width: 684px;
+    height: 433px;
+    top: 207px;
+    left: 99px;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.desktop .text-wrapper {
+    position: absolute;
+    width: 648px;
+    top: 269px;
+    left: 36px;
+    font-family: "Saira-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: normal;
+    animation: contentanimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    
+}
+.desktop .unsplash {
+    position: absolute;
+    width: 684px;
+    height: 250px;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+.desktop .rectangle {
+    width: 684px;
+    height: 433px;
+    background-color: #0a0a0a33;
+    border: 1px solid;
+    border-color: #ffffff;
+    box-shadow: 0px 4px 4px #00000040, inset 0px 4px 4px #00000040;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+}
+.desktop .text-wrapper-2 {
+    position: absolute;
+    top: 99px;
+    left: 99px;
+    font-family: "Saira-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 36px;
+    letter-spacing: 0;
+    line-height: normal;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+}
+.desktop .p {
+    position: absolute;
+    top: 689px;
+    left: 99px;
+    font-family: "Saira-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 36px;
+    letter-spacing: 0;
+    line-height: normal;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.desktop .overlap-2 {
+    position: absolute;
+    width: 253px;
+    height: 95px;
+    top: 747px;
+    left: 465px;
+    cursor: pointer;
+    animation: overlap2animation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.desktop .img {
+    width: 253px;
+    height: 95px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.desktop .text-wrapper-3 {
+    position: absolute;
+    top: 23px;
+    left: 104px;
+    font-family: "Saira-Regular", Helvetica;
+    font-weight: 400;
+    color: black;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: normal;
+    
+}
+
+.desktop .ionaughtlogo {
+    position: absolute;
+    width: 73px;
+    height: 45px;
+    top: 20px;
+    left: 20px;
+}
+.desktop .download {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 110px;
+    left: 28px;
+}
+.desktop .facebook {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 174px;
+    left: 28px;
+}
+.desktop .instagram {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 238px;
+    left: 28px;
+}
+.desktop .twitch {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 302px;
+    left: 28px;
+}
+.desktop .twitter {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 366px;
+    left: 28px;
+}
+.desktop .arrow {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 430px;
+    left: 28px;
+    display: none;
+    cursor: pointer;
+}
+.dropdown{
+    display: none;
+}
+
+    
+.desktop .overlap-3 {
+    position: absolute;
+    width: 138px;
+    height: 40px;
+    top: 20px;
+    left: 1252px;
+    border-radius: 5px;
+}
+.desktop .rectangle-2 {
+    width: 138px;
+    height: 40px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px #00000040, inset 0px 4px 4px #00000040;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: translateleftnavicon ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.desktop .text-wrapper-4 {
+    position: absolute;
+    top: 5px;
+    left: 32px;
+    font-family: "Saira-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: normal;
+    text-align: center;
+    line-height: 30px;
+    
+}
+.desktop .text-wrapper-4 a {
+    color: inherit;
+    text-decoration: none;
+   
+
+}
+
+.desktop .div-wrapper {
+    position: absolute;
+    width: 138px;
+    height: 40px;
+    top: 20px;
+    left: 1074px;
+    border-radius: 5px;
+    border: 1px solid;
+    border-color: #ffffff;
+    box-shadow: 0px 4px 4px #00000040, inset 0px 4px 4px #00000040;
+    animation: logindivanimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.desktop .text-wrapper-5 {
+    position: absolute;
+    top: 4px;
+    left: 43px;
+    font-family: "Saira-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 18px;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 30px;
+    cursor: default;
+    animation: logintextanimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    
+    
+   
+}
+.desktop .text-wrapper-6 {
+    position: absolute;
+    top: 25px;
+    left: 923px;
+    font-family: "Saira-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: normal;
+    cursor: default;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.desktop .text-wrapper-7 {
+    position: absolute;
+    top: 25px;
+    left: 806px;
+    font-family: "Saira-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: normal;
+    cursor: default;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.ionaughtlogo{
+    animation: translateicon ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+#leftnavicon{
+    animation: translateleftnavicon ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+}
+
+@media only screen and (max-width: 500px) {
+ 
+    .desktop {
+        width: 428px;
+        height: 926px;
+    }
+    .desktop .overlap-group-wrapper {
+    
+        background-image: url(./assets/images/unsplash_iar-afB0QQw.png);
+        
+        width: 428px;
+        height: 926px;
+    }
+    .desktop .overlap-group {
+        background-image: url(./assets/images/unsplashdad_oyXis2kALVg.png); 
+        height: 926px;
+    }
+    .frame {
+        position:absolute;
+        top: 300px;
+        left: 100px;
+        height: 200px;
+        width: 200px;  
+    }
+    
+    .closebutton {
+        position:relative;
+        width: 20px;
+        height: 20px;
+        top: 5px;
+        left: 175px;
+    }
+    
+    .content {
+        font-weight: 100;
+        color: #ffffff;
+        font-size: 15px;
+        position: relative;
+        padding-left: 30%;
+        padding-top: 10%;
+    }
+    
+    .desktop .overlap {
+        position: relative;
+        width: 348px;
+        height: 846px;
+        top: 80px;
+        left: 80px;
+        
+    }
+    .desktop .div {
+        position:relative;
+        width: 273px;
+        height: 393px;
+        top: 88px;
+        left: 20px;
+        
+    }
+    .desktop .text-wrapper {
+        position: relative;
+        width: 252px;
+        height: 198;
+        top: 172px;
+        left: 21px;
+        font-size: 14px;
+    }
+    .desktop .unsplash {
+        position: absolute;
+        width: 273px;
+        height: 163px;
+        
+    }
+    .desktop .rectangle {
+        width: 273px;
+        height: 393px;
+        
+    }
+    .desktop .text-wrapper-2 {
+        position:absolute;
+        top: 20px;
+        left: 20px;
+        width: 152px;
+        height: 28px;
+        font-size: 18px;
+    }
+    
+    .desktop .overlap-2 {
+        position: absolute;
+        width: 253px;
+        height: 95px;
+        top: 747px;
+        left: 465px;
+        cursor: pointer;
+        animation: overlap2animation ease 3s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+    .desktop .ionaughtlogo {
+        position: absolute;
+        width: 51px;
+        height: 31px;
+        top: 10px;
+        left: 10px;
+    }
+    .desktop .download {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        left: 15px;
+        top: 80px;
+    }
+    .desktop .facebook {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        left: 15px;
+        top: 128px;
+    }
+    .desktop .instagram {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        left: 15px;
+        top:188px;
+    }
+    .desktop .twitch {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        left: 15px;
+        top:252px;
+    }
+    .desktop .twitter {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        left: 15px;
+        top:316px;
+    }
+    .desktop .arrow {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        left: 15px;
+        top: 380px;
+        display: block;
+        cursor: pointer;
+    }
+    .desktop .overlap-3 {
+        position: absolute;
+        width: 80px;
+        height: 30px;
+        top: 10px;
+        left: 338px;
+        
+    }
+    .desktop .rectangle-2 {
+        width: 80px;
+        height: 30px;
+    }
+    .desktop .text-wrapper-4 {
+        position: absolute;
+        top: 1px;
+        left: 10px;
+        font-size: 14px;
+        
+    }
+    
+    .desktop .div-wrapper {
+        position: absolute;
+        width: 80px;
+        height: 30px;
+        top: 10px;
+        left: 238px;
+    }
+    .desktop .text-wrapper-5 {
+        position: absolute;
+        top: 1px;
+        left: 18px;
+        font-size: 14px; 
+    }
+    .desktop .text-wrapper-6 {
+        display: none;
+    }
+    .desktop .text-wrapper-7 {
+        display: none;
+    }
+    
+    .desktop .p {
+        position: absolute;
+        top: 521px;
+        left: 20px;
+        font-size: 18px;
+        
+    }
+    .desktop .overlap-2 {
+        position: absolute;
+        width: 151px;
+        height: 53.62px;
+        top: 553px;
+        left:173px;
+        
+    }
+    .blinking-container{
+        width: 151px;
+        height: 53.62px;
+        
+    }
+    .desktop .img {
+        width: 151px;
+        height: 53.62px;
+        
+        
+    }
+    .desktop .text-wrapper-3 {
+        position: absolute;
+        top: 14px;
+        left:53px;
+        font-size: 14px;
+    }
+    .dropdown {
+        position:absolute;
+        top: 380px;
+        height: 104px;
+        width: 350px;  
+        background-image: url(./assets/images/dadadaddadada.png);
+        display: none;
+    }
+    
+    .arrowt {
+        position:relative;
+        width: 20px;
+        height: 20px;
+        top: 5px;
+        left: 15px;
+        cursor: pointer;
+    }
+    
+    .dropcontent {
+        font-weight: 400;
+        color: #ffffff;
+        font-size: 14px;
+        position: relative;
+        padding-left: 20%;
+        font-family: "Saira-Regular", Helvetica;
+    }
+}
+   
+
+      
